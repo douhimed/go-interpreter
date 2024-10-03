@@ -105,7 +105,9 @@ type ExpressionStatement struct {
 }
 
 func (es *ExpressionStatement) StatementNode() {}
-func (ex *ExpressionStatement) TokenLiteral()  {}
+func (ex *ExpressionStatement) TokenLiteral() string {
+	return ""
+}
 func (es *ExpressionStatement) String() string {
 	if es.Expression != nil {
 		return es.Expression.String()
