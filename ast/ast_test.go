@@ -22,7 +22,7 @@ func TestString(t *testing.T) {
 		},
 	}
 	actualValue := program.String()
-	if actualValue != "let myVar = anotherVar;" {
+	if actualValue != "let myVar = anotherValue;" {
 		t.Errorf("program.String() wrong. got=%q", actualValue)
 	}
 }
